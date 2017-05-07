@@ -8,6 +8,13 @@
 <link rel="shortcut icon" href=favicon.png type=image/png>
 <link rel=stylesheet href=index.css>
 <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+    function link_email(n,d) {
+        document.write("<a href=\"mailto");
+        document.write(":" + n + "@");
+        document.write(d + "\">Email<\/a>");
+    }
+</script>
 </head>
 <body>
 <pre><span class=comment>// Copyright 2017 Masahiro Ono. All rights reserved.
@@ -20,7 +27,7 @@
 
 <span class=keyword>type</span> Profile <span class=keyword>struct</span> {
   <span class=comment>// You can contact me these places:</span>
-  <a href="mailto:masahiro.o@gmail.com">Email</a>, <a href="https://twitter.com/tai_ga">Twitter</a> url.URL
+  <script type="text/javascript">link_email('masahiro.o','gmail.com');</script>, <a href="https://twitter.com/tai_ga">Twitter</a> url.URL
 
   <span class=comment>// You can check out my code at these places:</span>
   <a href="https://github.com/tai-ga">GitHub</a> url.URL
